@@ -20,9 +20,10 @@ void setup(void)
 {
   // start serial port
   Serial.begin(9600);
-
   // Start up the library
   sensors.begin();
+  sensors.setResolution(12);
+  sensors.setWaitForConversion(false);
   if (!sensors.getAddress(thermometer, 0)) Serial.println("Unable to find address for Device 0"); 
 }
 
@@ -36,5 +37,5 @@ void loop(void)
   sensors.requestTemperaturesByAddress(thermometer); // Send the command to get temperatures
   // After we got the temperatures, we can print them here.
   // We use the function ByIndex, and as an example get the temperature from the first sensor only.
-  Serial.println(sensors.getTempF(thermometer));
+  Serial.println(sensors.getTemp(thermometer));
 }

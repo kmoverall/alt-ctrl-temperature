@@ -12,11 +12,13 @@ public class Thermometer : MonoBehaviour {
     public static float temperature { get { return _temp; } }
     public static UnitSystem units = UnitSystem.Imperial;
     static List<float> _record;
-    public static int smoothing = 3;
+    public static int Smoothing = 12;
+    public int smoothing = 12;
 
     // Use this for initialization
     void Start() {
         _record = new List<float>();
+        Smoothing = smoothing;
 
         //Serial Port Setup
         serial1 = new SerialPort();

@@ -13,6 +13,10 @@ DallasTemperature sensors(&oneWire);
 
 DeviceAddress thermometer;
 
+int placementPin = 4;
+int val = 0;
+int temp = 0;
+
 /*
  * The setup function. We only start the sensors here
  */
@@ -25,6 +29,8 @@ void setup(void)
   sensors.setResolution(12);
   sensors.setWaitForConversion(false);
   if (!sensors.getAddress(thermometer, 0)) Serial.println("Unable to find address for Device 0"); 
+
+  pinMode(placementPin, INPUT);
 }
 
 /*
@@ -35,7 +41,12 @@ void loop(void)
   // call sensors.requestTemperatures() to issue a global temperature 
   // request to all devices on the bus
   sensors.requestTemperaturesByAddress(thermometer); // Send the command to get temperatures
-  // After we got the temperatures, we can print them here.
-  // We use the function ByIndex, and as an example get the temperature from the first sensor only.
-  Serial.println(sensors.getTemp(thermometer));
+
+  val = digitalRead(placementPin);
+  temp = sensors.getTemp(thermometer);
+  
+  char ans[8];
+  sprintf(ans, "%u %u", temp, val);
+  Serial.println(ans);
+  
 }

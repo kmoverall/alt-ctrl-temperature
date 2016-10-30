@@ -8,8 +8,12 @@ public enum UnitSystem { Imperial, Metric }
 public class Thermometer : MonoBehaviour {
     public static SerialPort serial1;
     public static string portName = "COM3";
+
     static float _temp;
     public static float temperature { get { return _temp; } }
+    static bool _onHead;
+    public static bool isOnHead { get { return _onHead; } }
+
     public static UnitSystem units = UnitSystem.Imperial;
     static List<float> _record;
     public static int Smoothing = 12;
@@ -37,9 +41,14 @@ public class Thermometer : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         float t = 0;
+        int b = 0;
         try {
             string line = serial1.ReadLine();
-            t = Convert.ToInt32(line);
+            t = Convert.ToInt32(line.Substring(0, line.IndexOf(" ")));
+            b = Convert.ToInt32(line.Substring(line.IndexOf(" ") + 1));
+
+            _onHead = b == 1;
+
             //Convert raw reading to temperature
             t = t/128f;
             if (units == UnitSystem.Imperial)

@@ -34,7 +34,7 @@ public class IncrementLunches : StateMachineBehaviour {
 	//}
 
 	// OnStateMachineExit is called when exiting a statemachine via its Exit Node
-	//override public void OnStateMachineExit(Animator animator, int stateMachinePathHash) {
-	//
-	//}
+	override public void OnStateMachineExit(Animator animator, int stateMachinePathHash) {
+        animator.SetInteger("Lunches Made", animator.GetInteger("Lunches Made") + 1);
+	}
 }

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: caf66b3d7b726944d82e98e0f3b577f4
-timeCreated: 1477531930
+timeCreated: 1478470352
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,7 @@ TextureImporter:
     21300010: lunchsprites_0_5
     21300012: lunchsprites_0_6
     21300014: lunchsprites_0_7
+    21300016: lunchsprites_0_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -161,6 +162,19 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lunchsprites_0_8
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 118
+        width: 101
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

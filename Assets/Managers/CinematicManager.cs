@@ -1,12 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 
 public class CinematicManager : Singleton<CinematicManager> {
     protected CinematicManager() { }
 
-    void Start() {
+    JSONObject cinematicData;
+    Text speechBubble;
 
+    void Start() {
+        TextAsset jsonText = Resources.Load("Cinematics") as TextAsset;
+        Instance.cinematicData = JSONObject.Create(jsonText.text);
     }
 
     void Update() {

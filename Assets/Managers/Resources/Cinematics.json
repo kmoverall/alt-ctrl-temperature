@@ -3,10 +3,19 @@
 		"You're sick again?",
 		"You don't look very sick to me.\nYou better not be trying to stay home\nand play your Nintendo all day.",
 		"We've been through this enough.\nYou can stay home if you're running\na fever. A case of the sniffles\nisn't going to keep you at home.",
-		"Well, you have the thermometer.\nHold it on your forehead.",
-		"Come on now, you'll need to\nleave for school soon.",
+		"You have the thermometer, right?\nHold it on your forehead."
+	],
+	"start prompt 1": [
+		"Hurry up, you'll need to\nleave for school soon."
+	],
+	"start prompt 2": [
+		"If you don't put the\nthermometer on your head you're\ngoing straight to school."
+	],
+	"confirm start head": [
 		"Ok. Keep it there while I fix lunch\nfor you and your brother.",
-		"And no funny business.\nThat thermometer better be on\nyour head when I turn around.",
+		"And no funny business.\nThat thermometer better be on\nyour head when I turn around."
+	],
+	"took off during confirm": [
 		"I'm not going to turn around until\nthat thermometer is on your head."
 	]
 }

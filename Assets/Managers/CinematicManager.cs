@@ -12,11 +12,13 @@ public class CinematicManager : Singleton<CinematicManager> {
     TypeOutText speechText;
     public float interSpeechDelay;
 
+    bool _isPlaying;
+    public static bool isPlaying { get { return Instance._isPlaying; } }
+
     void Start() {
         TextAsset jsonText = Resources.Load("Cinematics") as TextAsset;
         Instance.cinematicData = JSONObject.Create(jsonText.text);
         Instance.speechText = Instance.speechBubble.GetComponentInChildren<TypeOutText>();
-        Play("start");
     }
 
     void Update() {
@@ -24,11 +26,14 @@ public class CinematicManager : Singleton<CinematicManager> {
     }
 
     public static void Play(string name) {
+        Instance.StopAllCoroutines();
         JSONObject cinematicSequence = Instance.cinematicData.GetField(name);
         Instance.StartCoroutine(Instance.PlayTextSequence(cinematicSequence));
     }
 
     IEnumerator PlayTextSequence(JSONObject cinematicSequence) {
+
+        _isPlaying = true;
         speechBubble.GetComponent<Animator>().SetTrigger("Show");
         while(!speechBubble.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Shown")) {
             yield return null;
@@ -42,6 +47,11 @@ public class CinematicManager : Singleton<CinematicManager> {
             yield return StartCoroutine(speechText.TypeText(dialogue));
             yield return new WaitForSeconds(interSpeechDelay);
         }
+
         speechBubble.GetComponent<Animator>().SetTrigger("Hide");
+        while (!speechBubble.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Hidden")) {
+            yield return null;
+        }
+        _isPlaying = false;
     }
 }

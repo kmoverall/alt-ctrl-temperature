@@ -101,7 +101,7 @@
 				clip (color.a - 0.001);
 				#endif
 
-				color.a = color.a >= 0.1f;
+				color.a = color.a >= 0.25f;
 
 				return color;
 			}

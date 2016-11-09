@@ -45,8 +45,8 @@ void loop(void)
   val = digitalRead(placementPin);
   temp = sensors.getTemp(thermometer);
   
-  char ans[8];
-  sprintf(ans, "%u %u", temp, val);
+  char ans[10];
+  sprintf(ans, "t%uh%un", temp, val);
   Serial.println(ans);
   
 }

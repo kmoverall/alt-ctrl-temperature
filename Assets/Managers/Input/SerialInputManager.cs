@@ -38,7 +38,11 @@ public class SerialInputManager : Singleton<SerialInputManager> {
     void Update() {
         try {
             string line = serial.ReadLine();
-            Instance._serialData = line.Split(' ');
+            if (line.Contains("t") && line.Contains("h") && line.Contains("n"))
+            {
+                Instance._serialData = line.Split(new char[] { 'h', 'n' });
+                Instance._serialData[0] = Instance._serialData[0].Remove(0, 1);
+            }
         }
         catch { }
     }

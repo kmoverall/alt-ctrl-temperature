@@ -20,7 +20,7 @@
 	],
 	"midgame check pass": [
 		"Good to see you're being honest\nthis time.",
-		"Keep the thermometer on your head.\nI'll be checking your temperature soon."
+		"Keep the thermometer on your head.\nI'll be checking your\ntemperature soon."
 	],
 	"midgame check fail": [
 		"What are you doing with\nthat thermometer?",
@@ -28,6 +28,8 @@
 		"And no Nintendo for a week!"
 	],
 	"final redhanded fail": [
-		"what"
+		"What are you doing?",
+		"Did you think I wasn't going\nto be keeping an eye on you?"
+		
 	]
 }

@@ -23,6 +23,8 @@ public class Thermometer : Singleton<Thermometer> {
     public static bool isOnHead { get { return Instance._isOnHead; } }
 
     public static float displayTemperature { get { return units == UnitSystem.Imperial ? temperature : (temperature - 32) / 1.8f;  } }
+
+    public bool DebugMode;
     
     void Update() {
 
@@ -55,6 +57,11 @@ public class Thermometer : Singleton<Thermometer> {
         }
 
         //Logic for head sensor is reversed
-        _isOnHead = SerialInputManager.serialData[1] == "0";
+        if (!DebugManager.DebugMode) {
+            _isOnHead = SerialInputManager.serialData[1] == "0";
+        }
+        else {
+            _isOnHead = true;
+        }
     }
 }

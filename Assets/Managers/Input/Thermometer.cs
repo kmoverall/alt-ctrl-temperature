@@ -21,6 +21,8 @@ public class Thermometer : Singleton<Thermometer> {
     
     bool _isOnHead = false;
     public static bool isOnHead { get { return Instance._isOnHead; } }
+
+    public static float displayTemperature { get { return units == UnitSystem.Imperial ? temperature : (temperature - 32) / 1.8f;  } }
     
     void Update() {
 
@@ -32,8 +34,7 @@ public class Thermometer : Singleton<Thermometer> {
         float t = Convert.ToInt32(SerialInputManager.serialData[0]);
         //Convert raw reading to temperature
         t = t / 128f;
-        if (units == UnitSystem.Imperial)
-            t = t * 1.8f + 32;
+        t = t * 1.8f + 32;
 
         //Add new temperature to temperature record
         if (_record.Count == smoothing) {

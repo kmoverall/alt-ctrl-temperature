@@ -54,6 +54,7 @@ public class Thermometer : Singleton<Thermometer> {
             return;
         }
 
-        _isOnHead = SerialInputManager.serialData[1] == "1";
+        //Logic for head sensor is reversed
+        _isOnHead = SerialInputManager.serialData[1] == "0";
     }
 }

@@ -30,7 +30,7 @@ void setup(void)
   sensors.setWaitForConversion(false);
   if (!sensors.getAddress(thermometer, 0)) Serial.println("Unable to find address for Device 0"); 
 
-  pinMode(placementPin, INPUT);
+  pinMode(placementPin, INPUT_PULLUP);
 }
 
 /*

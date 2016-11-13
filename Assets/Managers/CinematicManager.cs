@@ -15,6 +15,8 @@ public class CinematicManager : Singleton<CinematicManager> {
     bool _isPlaying;
     public static bool isPlaying { get { return Instance._isPlaying; } }
 
+    static string _currentDialogue;
+
     void Start() {
         TextAsset jsonText = Resources.Load("Cinematics") as TextAsset;
         Instance.cinematicData = JSONObject.Create(jsonText.text);
@@ -26,14 +28,26 @@ public class CinematicManager : Singleton<CinematicManager> {
     }
 
     public static void Play(string name) {
-        Instance.StopAllCoroutines();
-        JSONObject cinematicSequence = Instance.cinematicData.GetField(name);
-        Instance.StartCoroutine(Instance.PlayTextSequence(cinematicSequence));
+        if (_currentDialogue != name) {
+            _currentDialogue = name;
+            Instance.StopAllCoroutines();
+            JSONObject cinematicSequence = Instance.cinematicData.GetField(name);
+            Instance.StartCoroutine(Instance.PlayTextSequence(cinematicSequence));
+        }
     }
 
     IEnumerator PlayTextSequence(JSONObject cinematicSequence) {
+        if (_isPlaying) {
+            speechText.Cancel();
+            speechBubble.GetComponent<Animator>().SetTrigger("Hide");
+            while (!speechBubble.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Hidden")) {
+                yield return null;
+            }
+        }
+        else {
+            _isPlaying = true;
+        }
 
-        _isPlaying = true;
         speechBubble.GetComponent<Animator>().SetTrigger("Show");
         while(!speechBubble.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Shown")) {
             yield return null;

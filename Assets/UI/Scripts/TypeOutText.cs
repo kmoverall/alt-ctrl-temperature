@@ -32,6 +32,11 @@ public class TypeOutText : MonoBehaviour {
         isFinished = true;
     }
 
+    public void Cancel() {
+        StopCoroutine("TypeText");
+        isFinished = true;
+    }
+
     public IEnumerator TypeText(string textToType) {
         stringToPrint = textToType;
         isFinished = false;

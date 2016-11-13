@@ -17,5 +17,17 @@
 	],
 	"took off during confirm": [
 		"I'm not going to turn around until\nthat thermometer is on your head."
+	],
+	"midgame check pass": [
+		"Good to see you're being honest\nthis time.",
+		"Keep the thermometer on your head.\nI'll be checking your temperature soon."
+	],
+	"midgame check fail": [
+		"What are you doing with\nthat thermometer?",
+		"I'm very disappointed in you.\nYou're going straight to school.",
+		"And no Nintendo for a week!"
+	],
+	"final redhanded fail": [
+		"what"
 	]
 }

@@ -27,6 +27,32 @@
 		"I'm very disappointed in you.\nYou're going straight to school.",
 		"And no Nintendo for a week!"
 	],
+	"final confirm": [
+		"Ok, I'm done with the lunches.",
+		"Hand me the thermometer and\nI'll check your temperature."
+	],
+	"final confirm waiting": [
+		"Give me the thermometer. You're\ngoing to school if I don't know\nyour temperature"
+	],
+	"final confirm impatient": [
+		"Stop stalling and hand me\nthe thermometer."
+	],
+	"final confrim start countdown": [
+		"You have until the count of 3\nto give me the thermometer."
+	],
+	"final countdown 1": [
+		"1..."
+	],
+	"final countdown 2": [
+		"2..."
+	],
+	"final countdown 3": [
+		"3."
+	],
+	"final countdown fail": [
+		"That's it. Get ready for school.",
+		"We'll talk about this\nwhen you get home."
+	],
 	"final redhanded fail": [
 		"What are you doing?",
 		"Did you think I wasn't going\nto be keeping an eye on you?",

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthyTemperature: 96
   feverTemperature: 100
-  hypothermiaTemperature: 92
+  coldTemperature: 92
+  muchTooColdTemperature: 50

@@ -6,5 +6,6 @@ using System.Collections.Generic;
 public class GameParameters : ScriptableObject {
     public float healthyTemperature;
     public float feverTemperature;
-    public float hypothermiaTemperature;
+    public float coldTemperature;
+    public float muchTooColdTemperature;
 }

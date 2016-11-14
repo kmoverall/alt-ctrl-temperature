@@ -22,7 +22,12 @@ public class Thermometer : Singleton<Thermometer> {
     bool _isOnHead = false;
     public static bool isOnHead { get { return Instance._isOnHead; } }
 
-    public static float displayTemperature { get { return units == UnitSystem.Imperial ? temperature : (temperature - 32) / 1.8f;  } }
+    public static string displayTemperature { 
+        get { 
+            float t = units == UnitSystem.Imperial ? temperature : (temperature - 32) / 1.8f;
+            return Mathf.Round(t).ToString() + '\u00B0';
+        }
+    }
 
     public bool DebugMode;
     

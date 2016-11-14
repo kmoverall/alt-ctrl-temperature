@@ -58,6 +58,8 @@ public class CinematicManager : Singleton<CinematicManager> {
             string dialogue = cinematicSequence[i].str;
             dialogue = dialogue.Replace("\\n", "\n");
 
+            dialogue = dialogue.Replace("#TEMPERATURE#", Thermometer.displayTemperature);
+
             yield return StartCoroutine(speechText.TypeText(dialogue));
             yield return new WaitForSeconds(interSpeechDelay);
         }

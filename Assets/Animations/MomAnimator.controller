@@ -13,43 +13,43 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: HeadCheck
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: DialoguePlaying
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Fever
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Too Cold
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Healthy
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Much Too Cold
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ca37b9b6bc4f14b98f8845647fe0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueName: final confirm 3
+  dialogueName: final countdown 3
 --- !u!114 &114000010802301492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ca37b9b6bc4f14b98f8845647fe0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueName: final confirm 1
+  dialogueName: final countdown 1
 --- !u!114 &114000011071920724
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ca37b9b6bc4f14b98f8845647fe0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueName: final confirm 2
+  dialogueName: final countdown 2
 --- !u!114 &114000011209363790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4356,6 +4356,10 @@ AnimatorStateMachine:
       - {fileID: 1109000014162990144}
       - {fileID: 1109000012317909572}
     data:
+      first: {fileID: 1107000011520168916}
+      second:
+      - {fileID: 1109000010443616728}
+    data:
       first: {fileID: 1107000011752470486}
       second:
       - {fileID: 1109000010958653148}
@@ -4364,26 +4368,22 @@ AnimatorStateMachine:
       second:
       - {fileID: 1109000013580281136}
     data:
-      first: {fileID: 1107000011520168916}
+      first: {fileID: 1107000012493957354}
       second:
-      - {fileID: 1109000010443616728}
+      - {fileID: 1109000010190180066}
+    data:
+      first: {fileID: 1107000012799254228}
+      second:
+      - {fileID: 1109000012402608484}
     data:
       first: {fileID: 1107000013227111588}
       second:
       - {fileID: 1109000010743092742}
       - {fileID: 1109000013374825418}
     data:
-      first: {fileID: 1107000012799254228}
-      second:
-      - {fileID: 1109000012402608484}
-    data:
       first: {fileID: 1107000013500627960}
       second:
       - {fileID: 1109000011055280098}
-    data:
-      first: {fileID: 1107000012493957354}
-      second:
-      - {fileID: 1109000010190180066}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: -744, y: 264, z: 0}

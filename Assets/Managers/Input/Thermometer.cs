@@ -4,16 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO.Ports;
 
-public enum UnitSystem { Imperial, Metric }
-
 public class Thermometer : Singleton<Thermometer> {
     protected Thermometer() { }
 
     float _temp = 60;
     public static float temperature { get { return Instance._temp; } }
-
-    UnitSystem _units = UnitSystem.Imperial;
-    public static UnitSystem units { get { return Instance._units; } }
 
     List<float> _record = new List<float>();
     int _smoothing = 30;
@@ -24,12 +19,10 @@ public class Thermometer : Singleton<Thermometer> {
 
     public static string displayTemperature { 
         get { 
-            float t = units == UnitSystem.Imperial ? temperature : (temperature - 32) / 1.8f;
+            float t = GameManager.unitSystem == UnitSystem.Imperial ? temperature : (temperature - 32) / 1.8f;
             return Mathf.Round(t).ToString() + '\u00B0';
         }
     }
-
-    public bool DebugMode;
     
     void Update() {
 

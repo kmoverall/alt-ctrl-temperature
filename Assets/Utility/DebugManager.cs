@@ -8,7 +8,7 @@ public class DebugManager : Singleton<DebugManager> {
     public bool debugMode = false;
     public static bool DebugMode { get { return Instance.debugMode; } }
 
-    [Range(0, 5)]
+    [Range(0, 8)]
     public float debugTimeScale = 1;
     public static float TimeScale { get { return Instance.debugTimeScale; } }
 	

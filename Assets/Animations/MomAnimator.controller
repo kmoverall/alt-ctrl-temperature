@@ -533,7 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ca37b9b6bc4f14b98f8845647fe0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueName: final confirm 3
+  dialogueName: final countdown 3
 --- !u!114 &114000013690063614
 MonoBehaviour:
   m_ObjectHideFlags: 1

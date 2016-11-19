@@ -27,8 +27,10 @@
 		"I'm very disappointed in you.\nYou're going straight to school.",
 		"And no Nintendo for a week!"
 	],
+	"final lunches done": [
+		"Ok, I'm done with the lunches."
+	],
 	"final confirm": [
-		"Ok, I'm done with the lunches.",
 		"Hand me the thermometer and\nI'll check your temperature."
 	],
 	"final confirm waiting": [
@@ -53,26 +55,31 @@
 		"That's it. Get ready for school.",
 		"We'll talk about this\nwhen you get home."
 	],
+	"final temperature report": [
+		"Hmm...",
+		"Looks like you have a\ntemperature of #TEMPERATURE#."
+	],
 	"final redhanded fail": [
 		"What are you doing?",
 		"Did you think I wasn't going\nto be keeping an eye on you?",
 		"We are going to have a\nloooong talk about this when\nyou get home from school."
 	],
 	"final healthy fail": [
-		"Well, #TEMPERATURE#. I think\nyou're in good enough shape to\ngo to school.",
+		"I think you're in good enough\nshape to go to school.",
 		"Now go ahead and get ready.\nThe bus is going to be here soon."
 	],
 	"final cold fail": [
-		"#TEMPERATURE#? You're not going to get out\nof school by avoiding taking\nyour temperature.",
-		"Now get ready for school.",
+		"You're not going to get out\nof school by avoiding taking\nyour temperature.",
+		"Now go get ready for school.",
 		"And no more stalling!"
 	],
 	"final extreme cold fail": [
-		"#TEMPERATURE#? This was a lot of work\nfor a joke.",
+		"This was a lot of work for a joke.",
 		"Now get ready for school.\nYou've wasted a lot of time with your\njoking around."
 	],
 	"final pass": [
-		"Oh my, looks like you have\na fever of #TEMPERATURE#!",
-		"Alright, go back to bed and\nget some rest. I'll go to the store\nand get you some soup."
+		"Oh my, you have a serious fever!",
+		"Alright, go back to bed and\nget some rest. I'll go to the store\nand get you some soup.",
+		"And feel free to play your\nNintendo as much as you want."
 	]
 }

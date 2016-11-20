@@ -9,7 +9,8 @@ public class UIThermometer : MonoBehaviour {
     public float maxTemp;
     public int smoothing = 30;
     
-    public Image healthyIndicator;
+    public Image healthyLowIndicator;
+    public Image healthyHighIndicator;
 
     Slider slider;
 
@@ -18,11 +19,17 @@ public class UIThermometer : MonoBehaviour {
         Thermometer.smoothing = smoothing;
 
         //Determine indicator position
-        slider.value = (GameManager.parameters.healthyTemperature - minTemp) / (maxTemp - minTemp);
+        slider.value = (GameManager.parameters.coldTemperature - minTemp) / (maxTemp - minTemp);
         Vector3 indicatorPos = Vector3.zero;
-        indicatorPos.x = healthyIndicator.rectTransform.position.x;
+        indicatorPos.x = healthyLowIndicator.rectTransform.position.x;
         indicatorPos.y = slider.handleRect.position.y;
-        healthyIndicator.rectTransform.position = indicatorPos;
+        healthyLowIndicator.rectTransform.position = indicatorPos;
+
+        slider.value = (GameManager.parameters.feverTemperature - minTemp) / (maxTemp - minTemp);
+        indicatorPos = Vector3.zero;
+        indicatorPos.x = healthyHighIndicator.rectTransform.position.x;
+        indicatorPos.y = slider.handleRect.position.y;
+        healthyHighIndicator.rectTransform.position = indicatorPos;
     }
 	
 	void Update () {

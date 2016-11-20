@@ -78,6 +78,14 @@
 		"This was a lot of work for a joke.",
 		"Now get ready for school.\nYou've wasted a lot of time with your\njoking around."
 	],
+	"final hot fail": [
+		"Oh my! Don't worry, but we need\nto get you to the hospital.",
+		"Don't bother getting dressed,\n we're going right now."
+	],
+	"final extreme heat fail": [
+		"This was a lot of work for a joke.",
+		"Now get ready for school.\nYou've wasted a lot of time with your\njoking around."
+	],
 	"final pass": [
 		"Oh my, you have a serious fever!",
 		"Alright, go back to bed and\nget some rest. I'll go to the store\nand get you some soup.",

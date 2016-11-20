@@ -8,4 +8,6 @@ public class GameParameters : ScriptableObject {
     public float feverTemperature;
     public float coldTemperature;
     public float muchTooColdTemperature;
+    public float dangerTemperature;
+    public float muchTooHotTemperature;
 }

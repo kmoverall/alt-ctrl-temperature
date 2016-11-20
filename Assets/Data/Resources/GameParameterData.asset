@@ -11,7 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4831085b32a52945b898410071c08fd, type: 3}
   m_Name: GameParameterData
   m_EditorClassIdentifier: 
-  healthyTemperature: 96
+  healthyTemperature: 98
   feverTemperature: 100
-  coldTemperature: 92
+  coldTemperature: 95
   muchTooColdTemperature: 50
+  dangerTemperature: 104
+  muchTooHotTemperature: 110

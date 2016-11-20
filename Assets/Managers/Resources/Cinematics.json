@@ -20,7 +20,8 @@
 	],
 	"midgame check pass": [
 		"Good to see you're being honest\nthis time.",
-		"Keep the thermometer on your head.\nI'll be checking your\ntemperature soon."
+		"Keep the thermometer on your head."
+		"I'll be checking your temperature\nwhen I'm done."
 	],
 	"midgame check fail": [
 		"What are you doing with\nthat thermometer?",

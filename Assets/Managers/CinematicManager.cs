@@ -69,5 +69,6 @@ public class CinematicManager : Singleton<CinematicManager> {
             yield return null;
         }
         _isPlaying = false;
+        _currentDialogue = "";
     }
 }

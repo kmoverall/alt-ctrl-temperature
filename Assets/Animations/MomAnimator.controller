@@ -13,67 +13,67 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: HeadCheck
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: DialoguePlaying
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Much Too Hot
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Danger
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Fever
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Healthy
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Too Cold
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Much Too Cold
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: PossibleTurnIndex
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: ShouldTurn
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1747,7 +1747,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Much Too Hot
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102000013422875614}
   m_Solo: 0
@@ -6724,26 +6727,17 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions:
     data:
-      first: {fileID: 1107000013973725164}
+      first: {fileID: 1107000010249349306}
       second:
-      - {fileID: 1109000011558747432}
-    data:
-      first: {fileID: 1107000013760278854}
-      second:
-      - {fileID: 1109000012912844072}
+      - {fileID: 1109000011636043136}
     data:
       first: {fileID: 1107000011184375264}
       second:
       - {fileID: 1109000011618304460}
     data:
-      first: {fileID: 1107000012991361956}
+      first: {fileID: 1107000011520168916}
       second:
-      - {fileID: 1109000012833652514}
-      - {fileID: 1109000010026881922}
-    data:
-      first: {fileID: 1107000010249349306}
-      second:
-      - {fileID: 1109000011636043136}
+      - {fileID: 1109000011370038050}
     data:
       first: {fileID: 1107000011752470486}
       second:
@@ -6753,26 +6747,35 @@ AnimatorStateMachine:
       second:
       - {fileID: 1109000012928286082}
     data:
-      first: {fileID: 1107000011520168916}
+      first: {fileID: 1107000012493957354}
       second:
-      - {fileID: 1109000011370038050}
+      - {fileID: 1109000010190180066}
+    data:
+      first: {fileID: 1107000012799254228}
+      second:
+      - {fileID: 1109000014124818640}
+    data:
+      first: {fileID: 1107000012991361956}
+      second:
+      - {fileID: 1109000012833652514}
+      - {fileID: 1109000010026881922}
     data:
       first: {fileID: 1107000013227111588}
       second:
       - {fileID: 1109000010743092742}
       - {fileID: 1109000013374825418}
     data:
-      first: {fileID: 1107000012799254228}
-      second:
-      - {fileID: 1109000014124818640}
-    data:
       first: {fileID: 1107000013500627960}
       second:
       - {fileID: 1109000011055280098}
     data:
-      first: {fileID: 1107000012493957354}
+      first: {fileID: 1107000013760278854}
       second:
-      - {fileID: 1109000010190180066}
+      - {fileID: 1109000012912844072}
+    data:
+      first: {fileID: 1107000013973725164}
+      second:
+      - {fileID: 1109000011558747432}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: -276, y: 12, z: 0}
   m_EntryPosition: {x: -1080, y: 288, z: 0}

@@ -591,18 +591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb1b5243b6fbc545aed79363d84e37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000012611756648
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ba04627efe5c54479106516edc190d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  music: {fileID: 8300000, guid: acdc36929e1c8e44f837f34bbf6bd548, type: 3}
 --- !u!114 &114000012722259414
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -4519,8 +4507,7 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000010555045300}
-  m_StateMachineBehaviours:
-  - {fileID: 114000012611756648}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1

@@ -17,4 +17,8 @@ public class UIMainMenu : MonoBehaviour {
         GetComponent<Animator>().SetTrigger("Hide Menu");
         momAnimator.SetTrigger("Start Game");
     }
+
+    public void Quit() {
+        Application.Quit();
+    }
 }

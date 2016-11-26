@@ -74,6 +74,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: Start Game
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -585,6 +591,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb1b5243b6fbc545aed79363d84e37c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000012611756648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba04627efe5c54479106516edc190d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 8300000, guid: acdc36929e1c8e44f837f34bbf6bd548, type: 3}
 --- !u!114 &114000012722259414
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -3445,7 +3463,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Start Game
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102000013406887600}
   m_Solo: 0
@@ -4495,7 +4516,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000010555045300}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114000012611756648}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6701,7 +6723,7 @@ AnimatorStateMachine:
     m_Position: {x: 240, y: 84, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 1107000013500627960}
-    m_Position: {x: -240, y: 276, z: 0}
+    m_Position: {x: -252, y: 288, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 1107000012493957354}
     m_Position: {x: 192, y: 228, z: 0}
@@ -6723,23 +6745,6 @@ AnimatorStateMachine:
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions:
-    data:
-      first: {fileID: 1107000013973725164}
-      second:
-      - {fileID: 1109000011558747432}
-    data:
-      first: {fileID: 1107000013760278854}
-      second:
-      - {fileID: 1109000012912844072}
-    data:
-      first: {fileID: 1107000011184375264}
-      second:
-      - {fileID: 1109000011618304460}
-    data:
-      first: {fileID: 1107000012991361956}
-      second:
-      - {fileID: 1109000012833652514}
-      - {fileID: 1109000010026881922}
     data:
       first: {fileID: 1107000010249349306}
       second:
@@ -6773,6 +6778,23 @@ AnimatorStateMachine:
       first: {fileID: 1107000012493957354}
       second:
       - {fileID: 1109000010190180066}
+    data:
+      first: {fileID: 1107000012991361956}
+      second:
+      - {fileID: 1109000012833652514}
+      - {fileID: 1109000010026881922}
+    data:
+      first: {fileID: 1107000011184375264}
+      second:
+      - {fileID: 1109000011618304460}
+    data:
+      first: {fileID: 1107000013760278854}
+      second:
+      - {fileID: 1109000012912844072}
+    data:
+      first: {fileID: 1107000013973725164}
+      second:
+      - {fileID: 1109000011558747432}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: -276, y: 12, z: 0}
   m_EntryPosition: {x: -1080, y: 288, z: 0}

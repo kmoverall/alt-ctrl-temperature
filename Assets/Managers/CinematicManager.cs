@@ -11,6 +11,7 @@ public class CinematicManager : Singleton<CinematicManager> {
     public RectTransform speechBubble;
     TypeOutText speechText;
     public float interSpeechDelay;
+    public AudioSource musicSource;
 
     bool _isPlaying;
     public static bool isPlaying { get { return Instance._isPlaying; } }
@@ -25,6 +26,12 @@ public class CinematicManager : Singleton<CinematicManager> {
 
     void Update() {
 
+    }
+
+    public static void PlayMusic(AudioClip music) 
+    {
+       Instance.musicSource.clip = music;
+       Instance.musicSource.Play();
     }
 
     public static void Play(string name) {

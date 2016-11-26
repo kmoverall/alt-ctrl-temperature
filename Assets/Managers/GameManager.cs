@@ -16,10 +16,10 @@ public class GameManager : Singleton<GameManager> {
     public static GameParameters parameters { get { return Instance._parameters; } }
 
     UnitSystem _unitSystem;
-    public static UnitSystem unitSystem { get { return Instance._unitSystem; } }
+    public static UnitSystem unitSystem { get { return Instance._unitSystem; } set { Instance._unitSystem = value; } }
 
     Gender _playerGender;
-    public static Gender playerGender { get { return Instance._playerGender; } }
+    public static Gender playerGender { get { return Instance._playerGender; } set { Instance._playerGender = value; } }
 
     void Awake() {
         _parameters = Resources.Load("GameParameterData") as GameParameters;

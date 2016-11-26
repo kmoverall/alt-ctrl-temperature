@@ -9,12 +9,19 @@ public class LunchHandler : MonoBehaviour {
 
     public int[] lunchAnimOrder;
     public string[] animTriggers;
-    static int currentIndex = 0;
+    int currentIndex = 0;
 
     public void AdvanceAnimation() {
         if (currentIndex < lunchAnimOrder.Length) {
             SendItemAnimTrigger(lunchAnimOrder[currentIndex], animTriggers[currentIndex]);
             currentIndex++;
+        }
+    }
+
+    public void Restart() {
+        currentIndex = 0;
+        foreach (SpriteRenderer o in lunchItems) {
+            o.GetComponent<Animator>().SetTrigger("Show");
         }
     }
 

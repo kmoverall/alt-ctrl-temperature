@@ -14,7 +14,7 @@ public class DebugManager : Singleton<DebugManager> {
     public float _temperature = 90;
     public static float temperature { get { return Instance._temperature;  } }
 
-    [Range(0, 8)]
+    [Range(0.125f, 16)]
     public float debugTimeScale = 1;
     public static float TimeScale { get { return Instance.debugTimeScale; } }
 	
@@ -36,7 +36,7 @@ public class DebugManager : Singleton<DebugManager> {
 
             if (Input.GetKeyDown(KeyCode.RightArrow)) {
                 debugTimeScale *= 2;
-                debugTimeScale = Mathf.Min(8, debugTimeScale);
+                debugTimeScale = Mathf.Clamp(debugTimeScale, 0.125f, 16);
             }
             else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
                 debugTimeScale /= 2;

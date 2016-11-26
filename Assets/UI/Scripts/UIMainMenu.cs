@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class UIMainMenu : MonoBehaviour {
 
     public Animator momAnimator;
+    public GameObject lunch;
 
 	public void ChooseFarenheit() {
         GameManager.unitSystem = UnitSystem.Imperial;
@@ -16,6 +17,25 @@ public class UIMainMenu : MonoBehaviour {
         GameManager.unitSystem = UnitSystem.Metric;
         GetComponent<Animator>().SetTrigger("Hide Menu");
         momAnimator.SetTrigger("Start Game");
+    }
+
+    public void Restart() {
+        GetComponent<Animator>().SetTrigger("Hide Menu");
+        momAnimator.SetTrigger("Restart");
+        momAnimator.SetInteger("LunchesMade", 0);
+        momAnimator.SetInteger("PossibleTurnIndex", 0);
+        momAnimator.SetTrigger("Start Game");
+        momAnimator.GetComponent<TurnTimingSelector>().GenerateNewTimings();
+        momAnimator.GetComponent<LunchHandler>().Restart();
+    }
+
+    public void MainMenu() {
+        GetComponent<Animator>().SetTrigger("Show Main Menu");
+        momAnimator.SetTrigger("Restart");
+        momAnimator.SetInteger("LunchesMade", 0);
+        momAnimator.SetInteger("PossibleTurnIndex", 0);
+        momAnimator.GetComponent<TurnTimingSelector>().GenerateNewTimings();
+        momAnimator.GetComponent<LunchHandler>().Restart();
     }
 
     public void Quit() {

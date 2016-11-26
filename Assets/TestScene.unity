@@ -509,7 +509,6 @@ GameObject:
   - 114: {fileID: 169841756}
   - 95: {fileID: 169841755}
   - 114: {fileID: 169841760}
-  - 114: {fileID: 169841761}
   m_Layer: 0
   m_Name: Menu Canvas
   m_TagString: Untagged
@@ -629,17 +628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   momAnimator: {fileID: 2016958305}
---- !u!114 &169841761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 169841754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579545e4e91d0bd46ab3f620d4091857, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  lunch: {fileID: 0}
 --- !u!1 &256317631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1266,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 543448438}
   - 114: {fileID: 543448439}
+  - 114: {fileID: 543448440}
   m_Layer: 0
   m_Name: Level Managers
   m_TagString: Untagged
@@ -1311,6 +1301,18 @@ MonoBehaviour:
   speechBubble: {fileID: 1277163170}
   interSpeechDelay: 2
   musicSource: {fileID: 1774509454}
+--- !u!114 &543448440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543448437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8faf2cd7020883c4e9258e54d04ad2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenu: {fileID: 169841754}
 --- !u!1 &618051547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,7 +1759,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 804044511}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 169841760}
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &804044511
@@ -2090,7 +2103,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 996797499}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 169841760}
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &996797499

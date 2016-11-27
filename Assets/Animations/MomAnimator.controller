@@ -111,6 +111,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: final redhanded fail
+--- !u!114 &114000010035531212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: Caught red-handed! You need to be sneakier about your fever faking
+    next time!
 --- !u!114 &114000010096223094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,6 +230,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: midgame check fail
+--- !u!114 &114000010499394794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: You didn't listen to your mom! How's she going to know about your
+    "fever" without the thermometer?
 --- !u!114 &114000010545151206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -251,6 +279,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: final extreme heat fail
+--- !u!114 &114000010600492828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: Caught red-handed! You need to be sneakier about your fever faking
+    next time!
 --- !u!114 &114000010612458712
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -263,6 +305,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: final confirm waiting
+--- !u!114 &114000010615197666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: You can't have any fun in the hospital! Get that temperature a little
+    lower next time.
 --- !u!114 &114000010615965286
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -275,6 +331,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: midgame check fail
+--- !u!114 &114000010666800492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: Caught red-handed! You need to be sneakier about your fever faking
+    next time!
 --- !u!114 &114000010694572450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -344,6 +414,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674341b28768d234588942b77590956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000010889185396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: Caught red-handed! You need to be sneakier about your fever faking
+    next time!
 --- !u!114 &114000010983135976
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -426,6 +510,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: start
+--- !u!114 &114000011264392596
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b8b83cf2800604b97f53fe968b1af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerName: Show End Menu
+--- !u!114 &114000011302313882
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b8b83cf2800604b97f53fe968b1af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerName: Show End Menu
 --- !u!114 &114000011303997454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -438,6 +546,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: start prompt 1
+--- !u!114 &114000011666423678
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: Caught red-handed! You need to be sneakier about your fever faking
+    next time!
 --- !u!114 &114000011693922182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -449,6 +571,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674341b28768d234588942b77590956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000011712773088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: Caught red-handed! You need to be sneakier about your fever faking
+    next time!
 --- !u!114 &114000011806042578
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -461,6 +597,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: final extreme cold fail
+--- !u!114 &114000011828404642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: You got the thermometer way too hot! Chill out next time!
 --- !u!114 &114000011863553142
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -484,6 +633,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674341b28768d234588942b77590956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000011961541834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: You must think you're really clever right now. Didn't think the game
+    would cover this case, did you?
 --- !u!114 &114000012005706802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -531,6 +694,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: final hot fail
+--- !u!114 &114000012219835132
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b8b83cf2800604b97f53fe968b1af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerName: Show End Menu
 --- !u!114 &114000012271577528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -554,6 +729,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b87c05939858d9f4e86ed4355e8498e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000012340624184
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b8b83cf2800604b97f53fe968b1af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerName: Show End Menu
 --- !u!114 &114000012423481490
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -748,6 +935,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674341b28768d234588942b77590956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000013480508596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 1
+  subtitleText: School drools! Time to stay at home and have fun all day!
+--- !u!114 &114000013502775342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: Did you really think she would believe you have a fever of room temperature?
+    Make some heat and get creative!
 --- !u!114 &114000013529903600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -793,6 +1007,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674341b28768d234588942b77590956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000013720412176
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b8b83cf2800604b97f53fe968b1af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerName: Show End Menu
 --- !u!114 &114000013801681562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -827,6 +1053,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674341b28768d234588942b77590956d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000014113410904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f70af401cf6684d98fd1471857018c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  success: 0
+  subtitleText: You can't stay at home with your real temperature! Try to get a little
+    more heat next time!
 --- !u!114 &114000014269014926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1064,6 +1304,30 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101000010217792484
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: DialoguePlaying
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102000013341256524}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.1
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75409836
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101000010231261488
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1217,6 +1481,30 @@ AnimatorStateTransition:
   m_ExitTime: 3
   m_HasExitTime: 1
   m_HasFixedDuration: 0
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101000010427878332
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: DialoguePlaying
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102000013267207426}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.1
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75409836
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -1505,6 +1793,30 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102000011774460842}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.1
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75409836
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101000010788323208
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: DialoguePlaying
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102000011148419602}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -2662,6 +2974,30 @@ AnimatorStateTransition:
   m_TransitionOffset: 0
   m_ExitTime: 0.9
   m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101000012166962684
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: DialoguePlaying
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102000010726094806}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.1
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -3986,6 +4322,54 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1101000013642966618
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: DialoguePlaying
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102000013341256524}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.1
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75409836
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101000013665786476
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: DialoguePlaying
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102000012763966856}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.1
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75409836
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
 --- !u!1101 &1101000013809813720
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4295,6 +4679,30 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102000010930165324}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0.1
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75409836
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &1101000014202712866
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: DialoguePlaying
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1102000013148902156}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -4767,6 +5175,30 @@ AnimatorState:
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
+--- !u!1102 &1102000010726094806
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Show Menu
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours:
+  - {fileID: 114000012219835132}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: d83595a841d5ad54bb8907ae7dfce18f, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
 --- !u!1102 &1102000010754547020
 AnimatorState:
   serializedVersion: 5
@@ -4802,9 +5234,11 @@ AnimatorState:
   m_Name: Failure
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: 1101000010788323208}
   m_StateMachineBehaviours:
   - {fileID: 114000010483999944}
+  - {fileID: 114000010666800492}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -4992,6 +5426,30 @@ AnimatorState:
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
+--- !u!1102 &1102000011148419602
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Show Menu
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours:
+  - {fileID: 114000012340624184}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: d83595a841d5ad54bb8907ae7dfce18f, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
 --- !u!1102 &1102000011194441766
 AnimatorState:
   serializedVersion: 5
@@ -5122,9 +5580,11 @@ AnimatorState:
   m_Name: Failure
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: 1101000010427878332}
   m_StateMachineBehaviours:
   - {fileID: 114000010615965286}
+  - {fileID: 114000010600492828}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -5301,6 +5761,7 @@ AnimatorState:
   - {fileID: 1101000013255834954}
   m_StateMachineBehaviours:
   - {fileID: 114000011806042578}
+  - {fileID: 114000011961541834}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -5569,9 +6030,11 @@ AnimatorState:
   m_Name: Failure
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: 1101000014202712866}
   m_StateMachineBehaviours:
   - {fileID: 114000012005706802}
+  - {fileID: 114000011712773088}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6021,6 +6484,31 @@ AnimatorState:
   - {fileID: 1101000013928878050}
   m_StateMachineBehaviours:
   - {fileID: 114000010262464208}
+  - {fileID: 114000013502775342}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: d83595a841d5ad54bb8907ae7dfce18f, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+--- !u!1102 &1102000012763966856
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Show Menu
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours:
+  - {fileID: 114000011302313882}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6046,6 +6534,7 @@ AnimatorState:
   - {fileID: 1101000011191359208}
   m_StateMachineBehaviours:
   - {fileID: 114000010201121790}
+  - {fileID: 114000014113410904}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6107,6 +6596,30 @@ AnimatorState:
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
+--- !u!1102 &1102000013148902156
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Show Menu
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours:
+  - {fileID: 114000011264392596}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: d83595a841d5ad54bb8907ae7dfce18f, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
 --- !u!1102 &1102000013194067284
 AnimatorState:
   serializedVersion: 5
@@ -6127,6 +6640,30 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 5341c5e909aab17418dd01effc512412, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+--- !u!1102 &1102000013267207426
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Show Menu
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours:
+  - {fileID: 114000013720412176}
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: d83595a841d5ad54bb8907ae7dfce18f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -6239,9 +6776,11 @@ AnimatorState:
   m_Name: Redhanded Fail
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: 1101000013642966618}
   m_StateMachineBehaviours:
   - {fileID: 114000010027903144}
+  - {fileID: 114000011666423678}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6317,6 +6856,7 @@ AnimatorState:
   - {fileID: 1101000010753214896}
   m_StateMachineBehaviours:
   - {fileID: 114000010599403786}
+  - {fileID: 114000011828404642}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6362,9 +6902,11 @@ AnimatorState:
   m_Name: Countdown Failure
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: 1101000010217792484}
   m_StateMachineBehaviours:
   - {fileID: 114000013610864360}
+  - {fileID: 114000010499394794}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6490,6 +7032,7 @@ AnimatorState:
   - {fileID: 1101000010276457464}
   m_StateMachineBehaviours:
   - {fileID: 114000011863553142}
+  - {fileID: 114000013480508596}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6662,9 +7205,11 @@ AnimatorState:
   m_Name: Failure
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: 1101000013665786476}
   m_StateMachineBehaviours:
   - {fileID: 114000010296587346}
+  - {fileID: 114000010035531212}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6716,6 +7261,7 @@ AnimatorState:
   - {fileID: 1101000011852283910}
   m_StateMachineBehaviours:
   - {fileID: 114000012204706498}
+  - {fileID: 114000010615197666}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6762,9 +7308,11 @@ AnimatorState:
   m_Name: Failure
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: 1101000012166962684}
   m_StateMachineBehaviours:
   - {fileID: 114000012877640638}
+  - {fileID: 114000010889185396}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -6942,10 +7490,10 @@ AnimatorStateMachine:
     m_Position: {x: 240, y: 84, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 1107000013500627960}
-    m_Position: {x: -252, y: 288, z: 0}
+    m_Position: {x: -240, y: 288, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 1107000012493957354}
-    m_Position: {x: 192, y: 228, z: 0}
+    m_Position: {x: 216, y: 228, z: 0}
   - serializedVersion: 1
     m_StateMachine: {fileID: 1107000010433170940}
     m_Position: {x: 708, y: 444, z: 0}
@@ -6970,17 +7518,6 @@ AnimatorStateMachine:
       second:
       - {fileID: 1109000011636043136}
     data:
-      first: {fileID: 1107000010433170940}
-      second: []
-    data:
-      first: {fileID: 1107000011184375264}
-      second:
-      - {fileID: 1109000011618304460}
-    data:
-      first: {fileID: 1107000011520168916}
-      second:
-      - {fileID: 1109000011370038050}
-    data:
       first: {fileID: 1107000011752470486}
       second:
       - {fileID: 1109000010397462760}
@@ -6989,27 +7526,38 @@ AnimatorStateMachine:
       second:
       - {fileID: 1109000012928286082}
     data:
-      first: {fileID: 1107000012493957354}
+      first: {fileID: 1107000011520168916}
       second:
-      - {fileID: 1109000010190180066}
-    data:
-      first: {fileID: 1107000012799254228}
-      second:
-      - {fileID: 1109000014124818640}
-    data:
-      first: {fileID: 1107000012991361956}
-      second:
-      - {fileID: 1109000012833652514}
-      - {fileID: 1109000010026881922}
+      - {fileID: 1109000011370038050}
     data:
       first: {fileID: 1107000013227111588}
       second:
       - {fileID: 1109000010743092742}
       - {fileID: 1109000013374825418}
     data:
+      first: {fileID: 1107000012799254228}
+      second:
+      - {fileID: 1109000014124818640}
+    data:
       first: {fileID: 1107000013500627960}
       second:
       - {fileID: 1109000011055280098}
+    data:
+      first: {fileID: 1107000012493957354}
+      second:
+      - {fileID: 1109000010190180066}
+    data:
+      first: {fileID: 1107000010433170940}
+      second: []
+    data:
+      first: {fileID: 1107000012991361956}
+      second:
+      - {fileID: 1109000012833652514}
+      - {fileID: 1109000010026881922}
+    data:
+      first: {fileID: 1107000011184375264}
+      second:
+      - {fileID: 1109000011618304460}
     data:
       first: {fileID: 1107000013760278854}
       second:
@@ -7073,7 +7621,7 @@ AnimatorStateMachine:
     m_Position: {x: 156, y: 144, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102000013372239878}
-    m_Position: {x: -96, y: 228, z: 0}
+    m_Position: {x: 324, y: 384, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102000012953329422}
     m_Position: {x: 1476, y: 72, z: 0}
@@ -7106,7 +7654,7 @@ AnimatorStateMachine:
     m_Position: {x: 1476, y: -72, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102000013341256524}
-    m_Position: {x: 1860, y: 48, z: 0}
+    m_Position: {x: 1944, y: -24, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -7143,6 +7691,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 1102000012506288386}
     m_Position: {x: 48, y: 120, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102000013267207426}
+    m_Position: {x: 756, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -7299,6 +7850,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 1102000010233699848}
     m_Position: {x: 48, y: 120, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102000013148902156}
+    m_Position: {x: 828, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -7366,6 +7920,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 1102000010426587746}
     m_Position: {x: 48, y: 120, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102000012763966856}
+    m_Position: {x: 780, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -7479,6 +8036,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 1102000013194067284}
     m_Position: {x: 48, y: 120, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102000010726094806}
+    m_Position: {x: 756, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -7515,6 +8075,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 1102000012269883818}
     m_Position: {x: 48, y: 120, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1102000011148419602}
+    m_Position: {x: 780, y: 0, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

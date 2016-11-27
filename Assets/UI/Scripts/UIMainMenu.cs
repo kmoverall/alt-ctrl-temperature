@@ -22,7 +22,7 @@ public class UIMainMenu : MonoBehaviour {
     public void Restart() {
         GetComponent<Animator>().SetTrigger("Hide Menu");
         momAnimator.SetTrigger("Restart");
-        momAnimator.SetInteger("LunchesMade", 0);
+        momAnimator.SetInteger("Lunches Made", 0);
         momAnimator.SetInteger("PossibleTurnIndex", 0);
         momAnimator.SetTrigger("Start Game");
         momAnimator.GetComponent<TurnTimingSelector>().GenerateNewTimings();
@@ -32,13 +32,17 @@ public class UIMainMenu : MonoBehaviour {
     public void MainMenu() {
         GetComponent<Animator>().SetTrigger("Show Main Menu");
         momAnimator.SetTrigger("Restart");
-        momAnimator.SetInteger("LunchesMade", 0);
+        momAnimator.SetInteger("Lunches Made", 0);
         momAnimator.SetInteger("PossibleTurnIndex", 0);
         momAnimator.GetComponent<TurnTimingSelector>().GenerateNewTimings();
         momAnimator.GetComponent<LunchHandler>().Restart();
     }
 
     public void Quit() {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
         Application.Quit();
+        #endif
     }
 }

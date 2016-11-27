@@ -16,7 +16,7 @@ public class DebugManager : Singleton<DebugManager> {
 
     [Range(0.125f, 16)]
     public float debugTimeScale = 1;
-    public static float TimeScale { get { return Instance.debugTimeScale; } }
+    public static float TimeScale { get { return Instance.debugTimeScale; } set { Instance.debugTimeScale = value; } }
 	
 	void Update () {
         if (Input.GetKeyDown(KeyCode.BackQuote)) {

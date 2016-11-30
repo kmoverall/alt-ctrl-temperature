@@ -21,6 +21,7 @@ public class UIMainMenu : MonoBehaviour {
 
     public void Restart() {
         GetComponent<Animator>().SetTrigger("Hide Menu");
+        CinematicManager.Stop();
         momAnimator.SetTrigger("Restart");
         momAnimator.SetInteger("Lunches Made", 0);
         momAnimator.SetInteger("PossibleTurnIndex", 0);
@@ -31,6 +32,7 @@ public class UIMainMenu : MonoBehaviour {
 
     public void MainMenu() {
         GetComponent<Animator>().SetTrigger("Show Main Menu");
+        CinematicManager.Stop();
         momAnimator.SetTrigger("Restart");
         momAnimator.SetInteger("Lunches Made", 0);
         momAnimator.SetInteger("PossibleTurnIndex", 0);

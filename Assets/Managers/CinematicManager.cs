@@ -43,6 +43,11 @@ public class CinematicManager : Singleton<CinematicManager> {
         }
     }
 
+    public static void Stop() {
+        Instance.StopAllCoroutines();
+        Instance.StartCoroutine(Instance.StopTextSequence());
+    }
+
     IEnumerator PlayTextSequence(JSONObject cinematicSequence) {
         if (_isPlaying) {
             speechText.Cancel();
@@ -70,9 +75,19 @@ public class CinematicManager : Singleton<CinematicManager> {
             yield return StartCoroutine(speechText.TypeText(dialogue));
             yield return new WaitForSeconds(interSpeechDelay);
         }
-
+        
         speechBubble.GetComponent<Animator>().SetTrigger("Hide");
         while (!speechBubble.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Hidden")) {
+            yield return null;
+        }
+        _isPlaying = false;
+        _currentDialogue = "";
+    }
+
+    IEnumerator StopTextSequence() {
+        speechBubble.GetComponent<Animator>().SetTrigger("Hide");
+        while (!speechBubble.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Hidden"))
+        {
             yield return null;
         }
         _isPlaying = false;

@@ -4565,8 +4565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnTimings: 
   totalTurnTimes: 10
-  minTurns: 3
-  maxTurns: 5
+  minTurns: 4
+  maxTurns: 6
 --- !u!1 &2033429276
 GameObject:
   m_ObjectHideFlags: 0

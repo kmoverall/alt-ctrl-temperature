@@ -22,6 +22,7 @@ public class GameManager : Singleton<GameManager> {
     public static Gender playerGender { get { return Instance._playerGender; } set { Instance._playerGender = value; } }
 
     void Awake() {
+        Time.timeScale = 2;
         _parameters = Resources.Load("GameParameterData") as GameParameters;
     }
 }
